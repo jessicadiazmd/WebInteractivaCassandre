@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adolphe Mouron Cassandre</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/reset.css">  vertical timeline -->
+    <!--<link rel="stylesheet" href="css/style.css">  vertical timeline -->
+  </head>
+
+
+  <body>
+
+    <div class="contenedor">
+
+<!--MENU-->
+    <header>
+      <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">YSL</a></li>
+        <!--<li><a href="#fotos">Work</a></li>-->
+      </ul>
+      </nav>
+  </header>
+<!--MENU-->
+
+
+  		<h1>Cassandre</h1>
+
+
+<!--CITA-->
+      <div id="cita">
+        <p id="autoescritura">"Es difícil determinar cual es el lugar que le corresponde al cartel entre las artes pictóricas. Únicamente se exige de él que establezca una clara, poderosa y precisa comunicación."</p>
+      </div><!--fin cita-->
+<!--CITA-->
+<script src="js/jquery.min.js"></script> <!-- Resource JavaScript -->
+
+<script>
+var autoescribe = function (elemento, texto_a_escribir, index, intervalo_de_tiempo) {
+if (index < texto_a_escribir.length) {
+  $(elemento).append(texto_a_escribir[index++]);
+  setTimeout(function () { autoescribe(elemento, texto_a_escribir, index, intervalo_de_tiempo); }, intervalo_de_tiempo);
+}
+}
+
+$(document).ready(function () {
+var texto = $("#autoescritura").text();
+$("#autoescritura").empty();
+autoescribe("#autoescritura",texto , 0, 100);
+
+});
+
+</script>
+
+
+<!--BOTON-->
+    <div class="boton">
+     <a href="#about"><img src="img/boton.png" alt="Clic" width="120"></a>
+   </div>
+<!--BOTON-->
+
+  </div><!--fin contenedor-->
+
+
+<!--FIN CABECERA--><!--FIN CABECERA--><!--FIN CABECERA--><!--FIN CABECERA--><!--FIN CABECERA-->
+
+
+
+    <section id="about" class="explicacion">
+      <p>Adolphe Jean-Marie Mouron, conocido por el seudónimo de Cassandre, fue un cartelista y diseñador gráfico. Con él se inaugura la figura del diseño gráfico como tal. Desarrolló su carrera en el mundo de la publicidad, la moda, el teatro..., aunque sin duda en lo que más destacó fue en la publicidad. Su método es esencialmente geométrico y monumental, se mueve en una estética un tanto cubista.</p>
+      <p>¿Quieres saber algo más de él?</p>
+    </section>
+
+
+<!-- Vertical timeline de biografia de Cassandre-->
+
+      <div class="header">
+        <h2>Cassandre (1901-1968)</h2>
+      </div>
+
+
+      <section class="cd-timeline js-cd-timeline">
+        <div class="cd-timeline__container">
+          <div class="cd-timeline__block js-cd-block">
+            <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content js-cd-content">
+              <h3>Orígenes</h3>
+              <p>Nacido en Járkov, Ucrania el 24 de enero de 1901, de padres franceses, siendo joven se mudó a París donde estudió en la Academia de Bellas Artes y en la Academia Julian.</p>
+              <img src="img/foto.jpg" alt="Foto de Cassandre" width="200">
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+
+          <div class="cd-timeline__block js-cd-block">
+            <div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content js-cd-content">
+              <h3>Influencias</h3>
+              <p>En sus obras se puede observar la influencia de las vanguardias artísticas de la época de entreguerras del siglo XX, como el cubismo, el purismo de Le Corbusier, e incluso el futurismo con los recursos gráficos líneas cinéticas y sensación de velocidad.</p>
+              <span class="cd-timeline__date"></span>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+          <div class="cd-timeline__block js-cd-block">
+            <div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content js-cd-content">
+              <h3>Años 20 y 30</h3>
+              <p>En los años 20 y 30 fue uno de los diseñadores de afiches más admirado en Francia, integrando la llamada Alliance Graphique junto a Charles Loupot y Maurice Moyrand.</p>
+              <span class="cd-timeline__date"></span>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block js-cd-block">
+            <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content js-cd-content">
+              <h3>Segunda mitad de los años 1930</h3>
+              <p>Trabajó en Estados Unidos, creando las cubiertas de revistas como Harper´s Bazaar y Fortune.</p>
+              <img src="img/revista.jpg" alt="Foto de Cassandre" width="300">
+
+              <span class="cd-timeline__date"></span>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block js-cd-block">
+            <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content js-cd-content">
+              <h3>Después de la guerra</h3>
+              <p>De regreso a Francia creó escenografías y vestuarios teatrales, intentando ampliar su campo a la pintura.</p>
+              <span class="cd-timeline__date"></span>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+          <div class="cd-timeline__block js-cd-block">
+            <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+            </div> <!-- cd-timeline__img -->
+
+            <div class="cd-timeline__content js-cd-content">
+              <h3>Defunción</h3>
+              <p>En 1968 trás un par de intentos fallidos se quitó la vida en su apartamento de París a los 67 años.</p>
+              <span class="cd-timeline__date"></span>
+            </div> <!-- cd-timeline__content -->
+          </div> <!-- cd-timeline__block -->
+
+
+        </div>
+      </section> <!-- cd-timeline -->
+
+    <script src="js/main.js"></script> <!-- Resource JavaScript -->
+
+
+
+
+
+    <section id="descubrir" class="explicacion">
+      <p>Ahora ya sabes algo más de él, aunque seguramente ya conocías uno de sus trabajos.</p>
+      <div class="gris">
+        <p>Mueve el ratón por el espacio en blanco de abajo.</p>
+      </div>
+
+
+    <!--<img src="img/YSL.jpg" alt="logotipo Yves Saint Laurent" width="550">-->
+
+    <div id="contenedorDesvelarImagen">
+      <canvas id="canvasBottom" width="550" height="485"></canvas>
+      <canvas id="canvasTop" width="550" height="485" class="addBlur"></canvas>
+    </div>
+
+    <script>
+    $(function(){
+      var canvas=document.getElementById("canvasTop");
+      var ctx=canvas.getContext("2d");
+      var canvas2=document.getElementById("canvasBottom");
+      var ctx2=canvas2.getContext("2d");
+
+      $(document).scrollTop();
+
+      var canvasOffset=$("#canvasBottom").offset();
+      var offsetX = canvasOffset.left;
+      var offsetY = canvasOffset.top - $(document).scrollTop();
+
+      var img=new Image();
+      var startX; // variables de inicio de trazo
+      var startY; // variables de inicio de trazo
+
+      img.onload = function(){
+
+        // Ajustamos medidas al tamaño de la imagen
+        canvas.width = img.width;
+        canvas.height = img.height;
+        canvas2.width= img.width;
+        canvas2.height= img.height;
+
+        // Rellenamos de color el canvas superpuesto
+        ctx.lineWidth = 170;
+        ctx.lineCap = "round";
+        ctx.lineJoin = "round";
+        ctx.fillStyle ="#FFFFFF";
+        ctx.strokeStyle ="#FFFFFF";
+        ctx.rect(-1,-1,canvas.width+2,canvas.height+2);
+        ctx.stroke();
+        ctx.fill();
+
+        // Dibujamos la imagen cargada en el canvas de debajo.
+        // Podemos márgenes a la imagen para asegurar que no se visulumbra lor los bordes.
+        ctx2.drawImage(
+                        img,
+                        15,
+                        15,
+                        canvas2.width-30,
+                        canvas2.height-30,
+                        15,
+                        15,
+                        canvas2.width-30,
+                        canvas2.height-30
+                      );
+      };
+
+      img.src="img/YSL.jpg";
+      $('#canvasTop').on('mousemove', function(e){ // << este parámentro "e" es el evento y nos comunica la posición del cursor.
+
+        e.preventDefault();
+        $("#canvasTop").removeClass("addBlur");
+
+        canvasOffset = $("#canvasBottom").offset();
+        offsetX = canvasOffset.left;
+        offsetY = canvasOffset.top -$(document).scrollTop();
+
+        mouseX = parseInt( e.clientX - offsetX );
+        mouseY = parseInt( e.clientY - offsetY );
+
+        console.log(offsetX, offsetY, mouseX, mouseY);
+
+        ctx.save();
+        ctx.globalCompositeOperation="destination-out";
+        ctx.beginPath();
+        ctx.moveTo( startX, startY );
+        ctx.lineTo( mouseX, mouseY );
+        ctx.stroke();
+        ctx.closePath();
+
+        startX=mouseX;
+        startY=mouseY;
+
+        window.requestAnimationFrame( function(){$("#canvasTop").addClass("addBlur")} ) ;
+
+    })
+
+
+  })
+    </script>
+
+    </section>
+
+<!-- Haciendo clic que aparezca el logotipo de Yves Saint Laurent-->
+
+<section id="work" class="explicacion">
+  <p>Conoces el logotipo que diseño. ¿Verdad? Es uno de los trabajos más famosos del diseñador, junto con las iniciales de la misma marca, YSL, entrelazadas. Ambos trabajos, han perdurado desde principios de los 60 hasta la actualidad.</p>
+  <p>Desde hace unos años con la llegada del diseñador Heidi Simane, el logotipo YSL desapareció tal y como se conocía. En su línea de prêt-à-porter desapareció el nombre Yves Saint Laurent por Saint Laurent Paris. Aunque el logo YSL con las letras entrelazadas se mantuvo el logotipo tipográfico es muy diferente como se puede apreciar en la siguiente comparativa.</p>
+</section>
+
+
+<iframe frameborder="0" class="juxtapose" width="50%" height="310" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=2c94d1f6-5cda-11e8-b263-0edaf8f81e27"></iframe>
+
+<!--<section id="fotos" class="explicacion">
+  <p>¿Te has quedado con ganas de ver más trabajos de Casandre? Aquí tienes algunos.</p>
+</section>-->
+
+
+
+
+
+<footer>
+<p>Jessica Díaz</p>    <p>EINA</p>    <p>Master diseño gráfico</p>
+</footer>
+
+
+
+<style type="text/css">
+
+html #contenedorDesvelarImagen {
+    position: relative;
+    height: 485px;
+     transform: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
+    text-align: left;
+    width: 1065px;
+}
+html #canvasTop,html #canvasBottom {
+    position: absolute;
+      top: initial;
+    left: initial;
+   width: initial;
+     height: initial;
+    border: 0 none transparent;
+    margin: 0;
+}
+
+</style>
+
+  </body>
+</html>
